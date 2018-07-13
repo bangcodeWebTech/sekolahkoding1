@@ -1,0 +1,24 @@
+========HTML========
+
+html adalah singkatan dari --Hypertext Markup Language --
+
+yang dibutuhkan adalah:
+1. Text editor (Notepad, Sublime, dll)
+2. Browser (Chrome, IE, Firefox, dll)
+
+untuk menampilkan tulisan lewat browser
+1. Buat file dengan format .html
+2. lalu isikan file dengan text
+3. klik file nya lalu pilih open with browser.
+
+Elemen html:
+merupakan cara yang digunakan untuk menampilkan ataupun melakukan
+manipulasi text ke browser.
+elemen html terdiri dari 
+<tag pembuka> konten <tag penutup>
+contoh:
+##tag pembuka
+<html>
+konten
+##tag penutup
+</html>
