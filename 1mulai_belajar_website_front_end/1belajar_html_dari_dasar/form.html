@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+</head>
+<body>
+
+	<h3>Ini contoh Form</h3>
+
+	<form>
+
+		<fieldset>
+
+			<legend>Nama dan Pesan</legend>
+			<label for="name">Nama : </label>
+			<input type="text" name="name" placeholder="nama user ..." id="name">
+			<br><br>
+			<label for="description">Deskripsi : </label>
+			<textarea cols="50" rows="7" placeholder="deskripsi user ..." id="description"></textarea>
+			<br><br>
+		</fieldset>
+
+		<fieldset>
+			<legend>Pilihan</legend>
+			<label><b>Hobi</b></label><br>
+			<input type="checkbox" name="hobi" value="0"> Menggambar <br>
+			<input type="checkbox" name="hobi" value="1" checked=""> Menulis <br>
+			<input type="checkbox" name="hobi" value="2"> Menyanyi <br>
+			<br><br>
+			<b>Jenis Kelamin</b><br>
+			<input type="radio" name="gender" value="0" checked=""> Laki-laki
+			<input type="radio" name="gender" value="1"> Perempuan<br><br>
+			<label>Pelajaran</label><br>
+			<select name="pelajaran">
+				<optgroup label="Frontend">
+					<option value="0">HTML</option>
+					<option value="1">CSS</option>
+					<option value="2">JavaScript</option>
+				</optgroup>
+
+				<optgroup label="Backend">
+					<option value="3">PHP</option>
+					<option value="3">Database</option>
+				</optgroup>
+
+			</select>
+		</fieldset>
+		<br><br>
+		<input type="submit" name="" value="Kirim Data">
+
+		
+
+	</form>
+
+</body>
+</html>
