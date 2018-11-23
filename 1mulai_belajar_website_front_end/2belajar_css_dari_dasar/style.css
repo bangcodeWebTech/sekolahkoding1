@@ -20,14 +20,27 @@ value merupaakn nilainya*/
 	font-family: sans-serif;
 }
 
-/*#menu_web{
-	background: yellow;
+#menu_wrap{
+	/* background: yellow; */
+	/* margin: top right bottom left; */
+	margin : 10px 0 50px 0;
 }
-
+/* 
 .menu{
 	color: red;
-	}*/
-
+	} */
+	.menu{
+		
+		display: inline-block;
+		/* height: 50px;
+		width: 100px; */
+		text-decoration: none;
+		/* border-width: 3px;
+		border-style: solid;
+		border-color: black; */
+		border: 3px solid black;
+		padding: 10px 10px;
+	}
 	/*kondisi biasa*/
 	.menu:link{
 		background: grey;
@@ -48,16 +61,18 @@ value merupaakn nilainya*/
 		background: white;
 	}
 
-	h1{
+	/* h1{
 		color: blue;
 		text-align: center;
 		text-decoration: underline;
+		display: inline;
 	}
 
 	h2{
 		text-align: center;
 		text-transform: uppercase;
-	}
+		display: inline;
+	} */
 
 	#text_pendek{
 		font-size: 24px;
@@ -67,6 +82,8 @@ value merupaakn nilainya*/
 		max-height: 100px;
 		background: yellow;
 		font-weight: bold;
+		/* visibility: hidden; */
+		display: none;
 	}
 
 	#text_panjang{
@@ -79,3 +96,103 @@ value merupaakn nilainya*/
 		word-spacing: 5px;
 	}
 
+/* mengatur posisi di css */
+/* 1. static , 2 relative , 3.absolute , 4.fixed */
+
+/* #menu_member{
+	position: absolute;
+	position: relative;
+	top: 50px;
+	left: 20px;
+} */
+
+/* #parent_h1{
+	position: relative;
+	top: 100px;
+} */
+
+/* posisi absolute akan tergantung dengan parent elementnya */
+/* #h1_member{
+	background: red;
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	z-index: -1;
+	
+} */
+
+/* #parent_h2{
+	position: relative;
+	top: 100px;
+} */
+
+/* posisi fixed tergantung dengan browser tidak tergantung dengan parent elementnya */
+/* #h2_member{
+	background: yellow;
+	position: fixed;
+	top: 100px;
+	left: 20px;
+	z-index: -2;
+
+} */
+
+table{
+	float: right;
+	margin-right: 20px;
+}
+
+#div_baru{
+	clear: both;
+}
+
+ul,ol,dl{
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	width: 33.33%;
+}
+
+#copyright{
+	text-align: center;
+	clear: both;
+}
+
+/* halaman kontak */
+h1,h2{
+	color: grey;
+	/* margin: 10px 0; */
+}
+
+/* a yang ada di bawah parent */
+/* div a{
+	background: yellow;
+} */
+
+
+/* a yang langsung di bawah parent */
+/* div > a{
+	background: blue;
+} */
+
+/* setelah element */
+/* p + div{
+	background: blue;
+} */
+
+/* semua element yang ada setelahnya */
+/* div ~ p{
+	background: red;
+} */
+
+/* pada hover 
+Elemen lain
+> langsung didalam
++ langsung setelah */
+
+/* h1:hover{
+	color: black;
+} */
+
+h1:hover + h2{
+	color: black;
+}
