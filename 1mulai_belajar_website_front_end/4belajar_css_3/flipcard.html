@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flipcard</title>
+    <style>
+        body{
+            margin-bottom: 500px;
+            margin-left: 50px;
+        }
+
+        #box{
+            perspective: 800px;
+        }
+
+        #card{
+            position: relative;
+            height: 200px; width: 200px;
+            transition: transform 2s;
+            border: 2px solid black;
+            color: white;
+            font-size: 20px;
+            transform-style: preserve-3d;
+        }
+
+        #card:hover{
+            transform: rotateY(180deg);
+            
+        }
+
+        #front,#back{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 200px;
+            width: 200px;
+            backface-visibility: hidden;
+        }
+
+        #front{
+            background: blue;
+        }
+
+        #back{
+            background: red;
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Flipcard</h1>
+    <div id="box">
+        <div id="card">
+            <div id="front">Sisi depan</div>
+            <div id="back">Sisi belakang</div>      
+        </div>
+    </div>
+</body>
+</html>

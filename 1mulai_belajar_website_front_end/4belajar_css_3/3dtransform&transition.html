@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>3D Transform & Transition</title>
+    <style>
+        div{
+            width: 100px; height: 100px; background: blue; margin-bottom: 5px;
+            transition: width 1s, background 1s;
+        }
+
+        #div3{
+            transition: height 1s;
+        }
+
+        #div1:hover{
+            width: 300px;
+        }
+
+        #div2:hover{
+            background: red;
+            transition-delay: 2s;
+        }
+
+        #div3:hover{
+            transition-timing-function: ease-in-out;
+            height: 220px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Transition</h1>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+</body>
+</html>

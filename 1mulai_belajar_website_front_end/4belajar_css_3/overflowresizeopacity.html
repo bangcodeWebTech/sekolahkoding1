@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Belajar CSS 3</title>
+    <style>
+        @font-face{
+            font-family: 'Charm-Regular'; /*nama font*/
+            src : url('../font/Charm-Regular.ttf'); /* sumber font nya */
+        }
+
+        div{
+            font-family: 'Charm-Regular';
+            width: 150px;
+            height: 150px;
+            background: yellow;
+            overflow-y: hidden;
+            resize: both;
+            opacity: 0.4;
+        }
+
+        img{
+            opacity: 0.5;
+            transition: opacity 2s;
+        }
+
+        img:hover{
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Overflow , Resize , Opacity</h1>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Nemo, ut hic quod tempora ea consequatur, possimus deleniti accusantium atque odit illum doloremque ex quia alias? Molestiae quam voluptatum excepturi exercitationem.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates beatae, blanditiis ipsum eveniet similique maiores, magnam excepturi facilis rem inventore quasi enim et perferendis. Voluptates tempore tempora ex in iusto.
+    </div>
+
+    <img src="../image/desk.jpg" alt="" width="300px">
+</body>
+</html>

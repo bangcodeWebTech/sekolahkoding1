@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>2d Transformation</title>
+    <style>
+        #div1{
+            width: 100px; height: 100px; background: red;
+            transform: translate(50px,50px);
+        }
+        #div2{
+            width: 100px; height: 100px; background: rgb(46, 13, 236);
+            transform: rotate(30deg);
+            -webkit-transform: rotate(30deg);
+            -moz-transform: rotate(30deg);
+            -o-transform: rotate(30deg);
+            -ms-transform: rotate(30deg);
+        }
+
+        #div3{
+            width: 100px; height: 100px; background: rgb(179, 255, 0);
+            transform: scale(1.5,0.5);
+        }
+
+        #div4{
+            width: 100px; height: 100px; background: aqua;
+            /* transform: skewX(5deg);
+            transform: skewY(5deg); */
+            transform: skew(10deg,10deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Translate</h1>
+    <div id="div1"></div>
+
+    <h2>Rotate</h2>
+    <div id="div2"></div>
+
+    <!-- mengubah ukurannya -->
+    <h2>Scale</h2>
+    <div id="div3"></div>
+
+    <!-- mengubah sisi sisinya -->
+    <h2>Skew</h2>
+    <div id="div4"></div>
+</body>
+</html>
