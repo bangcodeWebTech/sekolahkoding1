@@ -32,6 +32,29 @@
         ul :nth-child(3n+0){
             background: aqua;
         }
+
+        /* memilih checkbox yang sudah di check */
+        input:checked{
+           width: 50px;
+            
+        }
+
+        /* memilin input enable */
+        input:enabled{
+            border: 2px solid blue;
+        }
+
+        /* memiilih input disable */
+        input:disabled{
+            border: 2px solid red;
+        }
+
+        /* memlih input yang tidak valid */
+        input:invalid{
+            background: red;
+            color: white;
+        }
+
     </style>
 </head>
 <body>
@@ -54,6 +77,19 @@
         <li>List Kelima</li>
         <li>List Ke enam</li>
     </ul>
+
+    <h1>Input</h1>
+    <input type="checkbox" >Male
+    <input type="checkbox" checked>Female
+    <br><br>
+
+    <input type="text" placeholder="nama lengkap"> 
+    <input type="text" placeholder="nama pendek"> 
+    <input type="text" placeholder="kota asal" disabled>
+    <input type="email" placeholder="email">
+
+    <br><br><br>
+    Bangcode
 
 </body>
 </html>

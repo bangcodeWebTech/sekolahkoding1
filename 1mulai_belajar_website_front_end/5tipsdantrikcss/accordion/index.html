@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style media="screen">
+        
+        body{
+            margin: 15% 15%;
+            font-family: sans-serif;
+        }
+
+        .wrapper{
+            margin: 30px;
+        }
+        
+        a{  
+            display: block;
+            background-color: aqua;
+            text-decoration: none;
+            font-size: 26px;
+            color: black;
+        }
+        
+        .isi{
+            padding: 0; 
+            height: 0;
+            overflow: hidden;
+            transition: height 1s;
+        }
+
+      
+
+        .isi:target{
+            padding: 0 10px;
+            height: 50px;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>CSS Tips</h1>
+    
+    <div class="wrapper">
+        
+        <a href="#menu1">Menu 1</a>
+        <div id="menu1" class="isi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, rem sapiente consequatur vel voluptas suscipit nihil repellat possimus id quam explicabo saepe tempore laudantium exercitationem totam quasi illum adipisci accusamus?</div>
+    </div>
+    
+    
+    <div class="wrapper">
+        <a href="#menu2">Menu 2</a>
+        <div id="menu2" class="isi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, rem sapiente consequatur vel voluptas suscipit nihil repellat possimus id quam explicabo saepe tempore laudantium exercitationem totam quasi illum adipisci accusamus?</div>
+        
+    </div>
+    
+    <div class="wrapper">
+        <a href="#menu3">Menu 3</a>
+        <div id="menu3" class="isi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, rem sapiente consequatur vel voluptas suscipit nihil repellat possimus id quam explicabo saepe tempore laudantium exercitationem totam quasi illum adipisci accusamus?</div>
+        
+    </div>
+    
+</body>
+</html>
+
